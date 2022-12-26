@@ -47,10 +47,8 @@ class MainActivity : AppCompatActivity() {
         val weatherList = ArrayList<WeatherRes>()
         service.getWeather(-1).enqueue(object : Callback<WeatherRes> {
 
-            //-------------------------------------------------
 
 
-            //-------------------------------------------------
             @SuppressLint("SetTextI18n")
             override fun onResponse(call: Call<WeatherRes>, response: Response<WeatherRes>) {
 
